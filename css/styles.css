@@ -1,0 +1,281 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6em;
+  font-size: 1rem;
+  margin: 0px;
+  background-color: whitesmoke;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: whitesmoke;
+  color: #333;
+  padding: 1em;
+}
+
+.container {
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+}
+#header-img {
+  width: 3%;
+  position: absolute;
+  top: 0%;
+  bottom: 5%;
+  left: 4%;
+  padding: 5px;
+  margin: 0%;
+}
+#title {
+  text-align: left;
+  padding-left: 55px;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 2%;
+  bottom: 5%;
+  color: #333;
+  font-size: 0.9rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+#nav-bar {
+  color: #333;
+  position: fixed;
+  top: 0%;
+  right: 10px;
+  padding-left: 30%;
+  margin-left: 20%;
+}
+@media (max-width: 600px) {
+  #nav-bar {
+    display: flex;
+    top: 0;
+    right: 0;
+    padding-left: 0;
+    margin-left: 0;
+    background-color: transparent;
+  }
+}
+#nav-bar ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+#nav-bar li {
+  display: inline;
+  padding: 5px 20px;
+  margin-bottom: 0px;
+}
+
+#nav-bar a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+#nav-bar li:hover {
+  border-bottom: 2px solid dodgerblue;
+}
+
+@media (max-width: 600px) {
+  #nav-bar li {
+    display: block;
+    margin: 0;
+  }
+}
+.container {
+  display: block;
+  margin: 2rem auto;
+  padding: 2rem;
+  /* min-height: 10rem; */
+}
+@media (max-width: 600px) {
+  .container {
+    width: 60%;
+  }
+}
+#form {
+  background-color: whitesmoke;
+  text-align: center;
+  padding-top: 3%;
+}
+#description {
+  /* position: static;  */
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+
+form div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#email {
+  width: 40%;
+  padding: 0.24rem 0;
+  margin: 10px 0;
+  border-style: groove;
+  border-radius: 5px;
+}
+#submit {
+  width: 30%;
+  padding: 0.24rem 0;
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
+  background-color: dodgerblue;
+}
+
+#submit:hover {
+  background-color: white;
+  color: dodgerblue;
+  border: 1px dodgerblue solid;
+}
+
+#how-it-works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#how-it-works div {
+  width: 80%;
+}
+#price {
+  display: flex;
+  margin: 2rem 0;
+}
+@media (max-width: 600px) {
+  #price {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.item {
+  border: 1px rgba(30, 143, 255, 0.562) solid;
+  margin: 10px;
+  width: 60%;
+  border-radius: 5px;
+  text-align: center;
+  padding-bottom: 10px;
+  line-height: 2em;
+  box-shadow: 2px 2px 10px #333333a4;
+}
+
+.item ol {
+  list-style: none;
+}
+
+.item-text {
+  background-color: rgba(30, 143, 255, 0.4);
+  font-size: 1.2rem;
+}
+.item h2 {
+  font-weight: 500;
+}
+.item .btn {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: dodgerblue;
+  border: 2px whitesmoke solid;
+  border-radius: 5px;
+}
+.item .btn:hover {
+  background-color: white;
+  color: dodgerblue;
+  border: 1px cornsilk solid;
+}
+
+#footer {
+  background-color: dodgerblue;
+  padding: 1.5rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+#footer ul li {
+  margin-right: 1.2rem;
+  list-style: none;
+}
+
+.footerP {
+  box-shadow: 0px 0.3px 0.5px #333;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.7rem;
+  margin: 0.7rem;
+}
+
+.section {
+  line-height: 1.2rem;
+}
+
+.fa {
+  color: rgba(30, 143, 255, 0.4);
+  padding-right: 5px;
+  padding-left: 10px;
+  width: 0.5rem;
+  padding-bottom: 8px;
+  margin-top: 15px;
+}
+
+.section-label {
+  font-size: 1.2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  padding-left: 3rem;
+  margin-left: 26px;
+}
+.section-text {
+  padding-left: 4rem;
+  margin-left: 25px;
+}
+
+.section-text {
+  font-size: 0.9rem;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+}
+
+input {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 0.6rem;
+
+  /* ::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center; */
+}
