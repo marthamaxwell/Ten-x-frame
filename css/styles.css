@@ -151,9 +151,25 @@ form div {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 2rem;
+
+  margin: 2rem 0;
 }
 #how-it-works div {
-  width: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#how-it-works div iframe {
+  width: 60%;
+  height: 20rem;
+}
+@media (max-width: 600px) {
+  /* #how-it-works div iframe {
+    width: 80%;
+  } */
 }
 #price {
   display: flex;
